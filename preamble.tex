@@ -1,0 +1,80 @@
+% Author: Abid H. Mujtaba
+
+% This is a tex file implementing my CV/resume.
+
+\documentclass[11pt]{article}
+
+
+% Configuration copied from source tex file mentioned in webpage: http://www.thelinuxdaily.com/2008/10/latex-resume-examples/  by Derek R. Hildreth
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{changepage}
+
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=mygreylink
+}
+
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.10}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+
+\usepackage{array, xcolor}			% Settings from http://texblog.org/2012/04/25/writing-a-cv-in-latex/
+\definecolor{lightgray}{gray}{0.8}
+
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\usepackage{hanging}
+
+% New Environments:
+
+
+\newenvironment{hindent}{\hspace{30pt}\begin{minipage}{0.9\textwidth}}{\end{minipage}}		% Hanging Indentation used for text inside each section
+
+\newenvironment{Section}[1]{\resheading{#1}\vspace{10pt}}{\vspace{12pt}}		% A Section environment that accepts the heading of the section as the parameter
+
+\newenvironment{nbList}{\vspace{-10pt}\renewcommand\labelitemi{}\begin{itemize}}{\end{itemize}\vspace{-10pt}}		% A List environment with no bullets.
+
+\newenvironment{specTable}[1]{\begin{tabular}{l@{ : }p{#1\textwidth}}}{\end{tabular}}		% Specifies a 2-column table separated by a colon used to specify items. The second column has wrapped text
+
+\newcommand\twoTable[3]{\begin{tabular}{p{0.12\textwidth}@{ - \hspace{0.5em}}p{0.12\textwidth}@{\hspace{2em}}p{0.6\textwidth}}#1 & #2 & #3 \end{tabular}}
+
+
+\DeclareGraphicsExtensions{.jpg}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+
