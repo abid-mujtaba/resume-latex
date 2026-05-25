@@ -1,0 +1,23 @@
+words:
+  - Abid
+  - Chromecast
+  - COMSATS
+  - Cython
+  - Eigen
+  - Hasan
+  - Haskell
+  - Hildreth
+  - Inkscape
+  - Loreal
+  - Mathematica
+  - Mujtaba
+  - NUST
+  - RIPT
+ignoreWords:
+  - fetchheaders
+  - mygreylink
+  - pdflatex
+  - spacetimes
+  - texlive
+  - uwsgi
+
