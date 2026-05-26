@@ -16,6 +16,7 @@
 \usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{changepage}
+\usepackage{colortbl}
 
 \hypersetup{
 	colorlinks,
@@ -28,7 +29,7 @@
 \urlstyle{same}
 \definecolor{mygrey}{gray}{.85}
 \definecolor{lightblue}{RGB}{194, 218, 232}
-\definecolor{beige}{245, 242, 235}
+\definecolor{lightyellow}{RGB}{250, 241, 200}
 \definecolor{mygreylink}{gray}{.10}
 \textheight=9.0in
 \raggedbottom
@@ -71,7 +72,7 @@
 
 \newenvironment{specTable}[1]{\begin{tabular}{l@{ : }p{#1\textwidth}}}{\end{tabular}}		% Specifies a 2-column table separated by a colon used to specify items. The second column has wrapped text
 
-\newcommand\twoTable[3]{\begin{tabular}{>{\itshape}p{0.12\textwidth}@{ - \hspace{0.5em}}>{\itshape}p{0.12\textwidth}@{\hspace{2em}}p{0.6\textwidth}}#1 & #2 & #3 \end{tabular}}
+\newcommand\twoTable[3]{\colorbox{lightyellow}{\begin{tabular}{@{}>{\itshape}p{0.12\textwidth}@{ - \hspace{0.5em}}>{\itshape}p{0.12\textwidth}@{\hspace{2em}}p{0.6\textwidth}@{}}#1 & #2 & #3 \end{tabular}}}
 
 
 \DeclareGraphicsExtensions{.jpg}
